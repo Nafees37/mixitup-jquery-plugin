@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Mixitup Jquery Plugin</title>
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+<div class="container">
+ <div class="Portfolio_items">
+  <button type="button" data-filter="all">All</button>
+  <button type="button" data-filter=".web_des">Web Design</button>
+  <button type="button" data-filter=".web_dev">Web Development</button>
+  <button type="button" data-filter=".seo">SEO</button>
+  <button type="button" data-filter=".wordpress">WordPress</button>
+  <button type="button" data-filter=".digit_mark">Digital Marketing</button>
+</div>
+ <div class="Portfolio_Gallery d-block mx-auto">
+   <div class="photo_items mix digit_mark web_dev seo">
+    <img src="images/1.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev digit_mark wordpress seo">
+    <img src="images/2.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev seo">
+    <img src="images/3.jpg" alt="">
+   </div>
+   <div class="photo_items mix digit_mark wordpress seo web_dev web_des">
+    <img src="images/4.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev seo">
+    <img src="images/5.jpg" alt="">
+   </div>
+   <div class="photo_items mix digit_mark wordpress web_des">
+    <img src="images/6.jpg" alt="">
+   </div>
+   <div class="photo_items mix digit_mark web_des">
+    <img src="images/7.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des seo wordpress">
+    <img src="images/8.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev wordpress">
+    <img src="images/9.jpg" alt="">
+   </div>
+   <div class="photo_items mix wordpress seo web_dev  digit_mark">
+    <img src="images/10.jpg" alt="">
+   </div>
+   <div class="photo_items mix digit_mark wordpress seo">
+    <img src="images/11.png" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev digit_mark">
+    <img src="images/12.jpg" alt="">
+   </div>
+   <div class="photo_items mix digit_mark wordpress seo">
+    <img src="images/13.jpg" alt="">
+   </div>
+   <div class="photo_items mix web_des web_dev wordpress">
+    <img src="images/14.jpg" alt="">
+   </div>
+   <div class="photo_items mix wordpress seo web_dev digit_mark">
+    <img src="images/15.jpg" alt="">
+   </div>
+ </div>
+</div>
+
+
+
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/mixitup.min.js"></script>
+ <script>
+  var mixer = mixitup('.Portfolio_Gallery');
+ </script>
+</body>
+</html>
